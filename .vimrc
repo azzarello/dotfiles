@@ -42,7 +42,10 @@ call plug#begin('~/.vim/plugged')
 
 "{{ My Plugins }}
     Plug 'arcticicestudio/nord-vim'
-    Plug 'code-stats/code-stats-vim'
+    Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
+    Plug 'neomake/neomake'
+    Plug 'tracyone/neomake-multiprocess'
+    Plug 'sbdchd/neoformat'
 
 call plug#end()
 
@@ -91,11 +94,12 @@ let g:rehash256 = 1
 let g:lightline = {
       \ 'colorscheme': 'nord',
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified', 'helloworld' ] ]
+      \ 'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'fileformat', 'fileencoding', 'filetype', 'codestats' ] ]
       \ },
       \ 'component': {
-      \   'helloworld': 'Hello, world!'
+      \   'codestats': '%{CodeStatsXp()}'
       \ },
       \ }
 

@@ -43,6 +43,8 @@ call plug#begin('~/.vim/plugged')
 "{{ My Plugins }}
     Plug 'arcticicestudio/nord-vim'
     Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
+    Plug 'neomake/neomake'
+    Plug 'tracyone/neomake-multiprocess'
 
 call plug#end()
 
