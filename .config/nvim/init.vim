@@ -18,6 +18,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     Plugin 'codota/tabnine-vim'
+    Plugin 'Chiel92/vim-autoformat'
 call vundle#end()
 
 call plug#begin('~/.vim/plugged')
