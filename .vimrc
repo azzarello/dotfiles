@@ -6,12 +6,19 @@
 "        
 " A customized init.vim for neovim (https://neovim.io/)     
 
+set shell=bash                " Needed for fish shell in vundle
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle For Managing Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'codota/tabnine-vim'
+call vundle#end()
 
 call plug#begin('~/.vim/plugged')
 
