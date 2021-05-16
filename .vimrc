@@ -54,7 +54,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neomake/neomake'
     Plug 'tracyone/neomake-multiprocess'
     Plug 'sbdchd/neoformat'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug '~/.fzf'
 
 call plug#end()
 
