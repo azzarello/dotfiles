@@ -55,6 +55,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tracyone/neomake-multiprocess'
     Plug 'sbdchd/neoformat'
     Plug '~/.fzf'
+    Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
