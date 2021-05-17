@@ -19,7 +19,8 @@ SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:/home/corndog/\x2econfig/
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/corndog/\x2econfig/fish/functions/fisher\x2efish\x1e/home/corndog/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_getopts_2E_fish_files:/home/corndog/\x2econfig/fish/functions/getopts\x2efish
 SETUVAR _fisher_jorgebucaran_2F_replay_2E_fish_files:/home/corndog/\x2econfig/fish/functions/replay\x2efish\x1e/home/corndog/\x2econfig/fish/completions/replay\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/replay\x2efish\x1ejorgebucaran/autopair\x2efish\x1egazorby/fish\x2dabbreviation\x2dtips\x1efranciscolourenco/done\x1ejethrokuan/z\x1ePatrickF1/fzf\x2efish\x1e0rax/fish\x2dbd\x1ejorgebucaran/getopts\x2efish
+SETUVAR _fisher_joseluisq_2F_gitnow_files:/home/corndog/\x2econfig/fish/functions/__gitnow_config_file\x2efish\x1e/home/corndog/\x2econfig/fish/functions/__gitnow_functions\x2efish\x1e/home/corndog/\x2econfig/fish/functions/__gitnow_manual\x2efish\x1e/home/corndog/\x2econfig/fish/conf\x2ed/gitnow\x2efish\x1e/home/corndog/\x2econfig/fish/conf\x2ed/gitnow_config\x2efish\x1e/home/corndog/\x2econfig/fish/completions/__gitnow_completions\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/replay\x2efish\x1ejorgebucaran/autopair\x2efish\x1egazorby/fish\x2dabbreviation\x2dtips\x1efranciscolourenco/done\x1ejethrokuan/z\x1ePatrickF1/fzf\x2efish\x1e0rax/fish\x2dbd\x1ejorgebucaran/getopts\x2efish\x1ejoseluisq/gitnow
 SETUVAR dangerous_colors:000000\x1e083743\x1e445659\x1efdf6e3\x1eb58900\x1ecb4b16\x1edc121f\x1eaf005f\x1e6c71c4\x1e268bd2\x1e2aa198\x1e859900
 SETUVAR dangerous_cursors:\x5c033\x5d12\x3b\x23268bd2\x5c007\x1e\x5c033\x5d12\x3b\x23b58900\x5c007\x1e\x5c033\x5d12\x3b\x23af005f\x5c007\x1e\x5c033\x5d12\x3b\x236c71c4\x5c007
 SETUVAR dangerous_day:000000\x1e333333\x1e666666\x1effffff\x1effff00\x1eff6600\x1eff0000\x1eff0033\x1e3300ff\x1e00aaff\x1e00ffff\x1e00ff00
