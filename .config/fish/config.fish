@@ -4,5 +4,4 @@ starship init fish | source
 # !! Contents within this block are managed by 'conda init' !!
 eval /home/corndog/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
-. /usr/share/autojump/autojump.fish
-
+set -x BAT_THEME Nord
