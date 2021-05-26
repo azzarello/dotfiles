@@ -53,4 +53,3 @@
 (package! company)
 (package! company-tabnine)
 (package! code-stats)
-(package! mu4e)
