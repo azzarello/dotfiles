@@ -115,7 +115,7 @@ return require("packer").startup(
         require_plugin("galaxyline.nvim")
         require_plugin("barbar.nvim")
         require_plugin("code-stats-vim")
-        require_plugin("vim-floaterm")
-        require_plugin("nvim-lightbulb")
+        -- require_plugin("vim-floaterm")
+        -- require_plugin("nvim-lightbulb")
     end
 )
