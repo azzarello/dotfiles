@@ -8,7 +8,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     execute "packadd packer.nvim"
 end
 
---- Check if a file or directory exists in this path
+--- check if a file or directory exists in this path
 local function require_plugin(plugin)
     local plugin_prefix = fn.stdpath("data") .. "/site/pack/packer/opt/"
 
@@ -17,7 +17,7 @@ local function require_plugin(plugin)
     local ok, err, code = os.rename(plugin_path, plugin_path)
     if not ok then
         if code == 13 then
-            -- Permission denied, but it exists
+            -- permission denied, but it exists
             return true
         end
     end
@@ -28,65 +28,68 @@ local function require_plugin(plugin)
     return ok, err, code
 end
 
-vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
+vim.cmd "autocmd bufwritepost plugins.lua packercompile" -- auto compile when there are changes in plugins.lua
 
 return require("packer").startup(
     function(use)
-        -- Packer can manage itself as an optional plugin
+        -- packer can manage itself as an optional plugin
         use "wbthomason/packer.nvim"
 
-        -- TODO refactor all of this (for now it works, but yes I know it could be wrapped in a simpler function)
+        -- todo refactor all of this (for now it works, but yes i know it could be wrapped in a simpler function)
         use {"neovim/nvim-lspconfig", opt = true}
         use {"glepnir/lspsaga.nvim", opt = true}
         use {"kabouzeid/nvim-lspinstall", opt = true}
 
-        -- Telescope
+        -- telescope
         use {"nvim-lua/popup.nvim", opt = true}
         use {"nvim-lua/plenary.nvim", opt = true}
         use {"nvim-telescope/telescope.nvim", opt = true}
         use {"nvim-telescope/telescope-fzy-native.nvim", opt = true}
 
-        -- Debugging
+        -- debugging
         use {"mfussenegger/nvim-dap", opt = true}
 
-        -- Autocomplete
+        -- autocomplete
         use {"hrsh7th/nvim-compe", opt = true}
         use {"hrsh7th/vim-vsnip", opt = true}
         use {"rafamadriz/friendly-snippets", opt = true}
 
-        -- Treesitter
-        use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+        -- treesitter
+        use {"nvim-treesitter/nvim-treesitter", run = ":tsupdate"}
         use {"windwp/nvim-ts-autotag", opt = true}
 
-        -- Explorer
+        -- explorer
         use {"kyazdani42/nvim-tree.lua", opt = true}
-        -- TODO remove when open on dir is supported by nvimtree
+        -- todo remove when open on dir is supported by nvimtree
         use "kevinhwang91/rnvimr"
 
         -- use {'lukas-reineke/indent-blankline.nvim', opt=true, branch = 'lua'}
         use {"lewis6991/gitsigns.nvim", opt = true}
         -- use {"liuchengxu/vim-which-key", opt = true}
         use {"folke/which-key.nvim", opt = true}
-        use {"ChristianChiarulli/dashboard-nvim", opt = true}
+        use {"christianchiarulli/dashboard-nvim", opt = true}
         use {"windwp/nvim-autopairs", opt = true}
         use {"terrortylor/nvim-comment", opt = true}
         use {"kevinhwang91/nvim-bqf", opt = true}
 
-        -- Color
+        -- color
         use {"christianchiarulli/nvcode-color-schemes.vim", opt = true}
 
-        -- Icons
+        -- icons
         use {"kyazdani42/nvim-web-devicons", opt = true}
 
-        -- Status Line and Bufferline
+        -- status line and bufferline
         use {"glepnir/galaxyline.nvim", opt = true}
         use {"romgrk/barbar.nvim", opt = true}
 
-        -- Code::Stats
-        use "https://gitlab.com/code-stats/code-stats-vim.git"
+        -- code::stats
+        use {"https://gitlab.com/code-stats/code-stats-vim.git"}
 
-        -- Floaterm
-        use 'voldikss/vim-floaterm'
+        -- floaterm
+        use {"voldikss/vim-floaterm", opt = true }
+
+        -- lightbulb
+        use {"kosayoda/nvim-lightbulb"}
 
         require_plugin("nvim-lspconfig")
         require_plugin("lspsaga.nvim")
@@ -113,5 +116,6 @@ return require("packer").startup(
         require_plugin("barbar.nvim")
         require_plugin("code-stats-vim")
         require_plugin("vim-floaterm")
+        require_plugin("nvim-lightbulb")
     end
 )
