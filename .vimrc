@@ -59,7 +59,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
 
 "{{ My Plugins }}
-    Plug 'arcticicestudio/nord-vim'
+    " Plug 'arcticicestudio/nord-vim'
     Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
     Plug 'neomake/neomake'
     Plug 'tracyone/neomake-multiprocess'
@@ -76,6 +76,7 @@ call plug#begin('~/.vim/plugged')
     " see: https://github.com/iamcco/markdown-preview.nvim/issues/50
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     Plug 'vim-syntastic/syntastic'
+    Plug 'franbach/miramare'
 call plug#end()
 
 filetype plugin indent on    " required
@@ -94,7 +95,9 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme nord
+let g:miramare_enable_italic = 1
+let g:miramare_disable_italic_comment = 1
+colorscheme miramare
 " REQUIRED: set your API key
 let g:codestats_api_key = 'SFMyNTY.WVhwNllYSmxiR3h2IyNNVE15T0RBPQ.bvLFIxasUg5_b-QqWZSsX0ALe4sptu7ijaFOAY5Zokw'
 
@@ -121,7 +124,7 @@ let g:rehash256 = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'miramare',
       \ 'active': {
       \ 'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
@@ -162,23 +165,23 @@ let g:NERDTreeWinSize=38
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Theming
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-highlight LineNr           ctermfg=8    ctermbg=none    cterm=none
-highlight CursorLineNr     ctermfg=7    ctermbg=8       cterm=none
-highlight VertSplit        ctermfg=0    ctermbg=8       cterm=none
-highlight Statement        ctermfg=2    ctermbg=none    cterm=none
-highlight Directory        ctermfg=4    ctermbg=none    cterm=none
-highlight StatusLine       ctermfg=7    ctermbg=8       cterm=none
-highlight StatusLineNC     ctermfg=7    ctermbg=8       cterm=none
-highlight NERDTreeClosable ctermfg=2
-highlight NERDTreeOpenable ctermfg=8
-highlight Comment          ctermfg=4    ctermbg=none    cterm=italic
-highlight Constant         ctermfg=12   ctermbg=none    cterm=none
-highlight Special          ctermfg=4    ctermbg=none    cterm=none
-highlight Identifier       ctermfg=6    ctermbg=none    cterm=none
-highlight PreProc          ctermfg=5    ctermbg=none    cterm=none
-highlight String           ctermfg=12   ctermbg=none    cterm=none
-highlight Number           ctermfg=1    ctermbg=none    cterm=none
-highlight Function         ctermfg=1    ctermbg=none    cterm=none
+"highlight LineNr           ctermfg=8    ctermbg=none    cterm=none
+"highlight CursorLineNr     ctermfg=7    ctermbg=8       cterm=none
+"highlight VertSplit        ctermfg=0    ctermbg=8       cterm=none
+"highlight Statement        ctermfg=2    ctermbg=none    cterm=none
+"highlight Directory        ctermfg=4    ctermbg=none    cterm=none
+"highlight StatusLine       ctermfg=7    ctermbg=8       cterm=none
+"highlight StatusLineNC     ctermfg=7    ctermbg=8       cterm=none
+"highlight NERDTreeClosable ctermfg=2
+"highlight NERDTreeOpenable ctermfg=8
+"highlight Comment          ctermfg=4    ctermbg=none    cterm=italic
+"highlight Constant         ctermfg=12   ctermbg=none    cterm=none
+"highlight Special          ctermfg=4    ctermbg=none    cterm=none
+"highlight Identifier       ctermfg=6    ctermbg=none    cterm=none
+"highlight PreProc          ctermfg=5    ctermbg=none    cterm=none
+"highlight String           ctermfg=12   ctermbg=none    cterm=none
+"highlight Number           ctermfg=1    ctermbg=none    cterm=none
+"highlight Function         ctermfg=1    ctermbg=none    cterm=none
 " highlight WildMenu         ctermfg=0       ctermbg=80      cterm=none
 " highlight Folded           ctermfg=103     ctermbg=234     cterm=none
 " highlight FoldColumn       ctermfg=103     ctermbg=234     cterm=none

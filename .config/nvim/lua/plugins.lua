@@ -89,7 +89,13 @@ return require("packer").startup(
         use {"voldikss/vim-floaterm", opt = true }
 
         -- lightbulb
-        use {"kosayoda/nvim-lightbulb"}
+        use {"kosayoda/nvim-lightbulb", opt = true}
+
+        -- vim-tmux-navigator
+        use {"christoomey/vim-tmux-navigator", opt = true}
+
+        -- miramare colorscheme
+        -- use {"franbach/miramare"}
 
         require_plugin("nvim-lspconfig")
         require_plugin("lspsaga.nvim")
@@ -117,5 +123,7 @@ return require("packer").startup(
         require_plugin("code-stats-vim")
         -- require_plugin("vim-floaterm")
         -- require_plugin("nvim-lightbulb")
+        require_plugin("vim-tmux-navigator")
+        -- require_plugin("miramare")
     end
 )

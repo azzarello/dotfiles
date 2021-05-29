@@ -6,6 +6,13 @@ vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', {silent = true})
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {silent = true})
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {silent = true})
 
+-- vim-tmux-navigator bind
+-- ...tmux_navigator_save_on_switch = 2 writes all buffers on leave
+-- 
+vim.cmd([[
+    let g:tmux_navigator_save_on_switch = 2
+]])
+
 -- TODO fix this
 -- Terminal window navigation
 vim.cmd([[

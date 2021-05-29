@@ -1,3 +1,4 @@
+decors/fish-ghq
 jorgebucaran/fisher
 jorgebucaran/replay.fish
 jorgebucaran/autopair.fish
@@ -5,6 +6,4 @@ gazorby/fish-abbreviation-tips
 franciscolourenco/done
 jethrokuan/z
 0rax/fish-bd
-jorgebucaran/getopts.fish
-joseluisq/gitnow
 PatrickF1/fzf.fish
