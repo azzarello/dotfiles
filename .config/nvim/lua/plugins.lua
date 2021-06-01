@@ -97,6 +97,10 @@ return require("packer").startup(
         -- miramare colorscheme
         -- use {"franbach/miramare"}
 
+        -- vim-tex
+        use {"lervag/vimtex", opt = true, ft = {'tex', 'bib', 'md'}}
+
+
         require_plugin("nvim-lspconfig")
         require_plugin("lspsaga.nvim")
         require_plugin("nvim-lspinstall")
@@ -125,5 +129,6 @@ return require("packer").startup(
         -- require_plugin("nvim-lightbulb")
         require_plugin("vim-tmux-navigator")
         -- require_plugin("miramare")
+        require_plugin("vimtex")
     end
 )
